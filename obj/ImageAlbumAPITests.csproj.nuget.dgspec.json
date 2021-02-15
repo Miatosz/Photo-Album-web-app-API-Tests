@@ -171,10 +171,6 @@
               "target": "Package",
               "version": "[16.5.0, )"
             },
-            "Microsoft.Owin.Cors": {
-              "target": "Package",
-              "version": "[4.1.1, )"
-            },
             "Mock": {
               "target": "Package",
               "version": "[1.0.0, )"

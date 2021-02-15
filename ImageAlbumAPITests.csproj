@@ -17,6 +17,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.2"/>
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.8.0"/>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.2"/>
-    <PackageReference Include="Microsoft.Owin.Cors" Version="4.1.1"/>
+    <!-- <PackageReference Include="Microsoft.Owin.Cors" Version="4.1.1"/> -->
   </ItemGroup>
 </Project>

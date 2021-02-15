@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using ImageAlbumAPI.Data;
@@ -12,6 +13,7 @@ namespace ImageAlbumAPITests.ReposTests
     {
         List<Photo> _photos;
         PhotoRepo _photoRepo;
+        Random random = new Random();
 
         [SetUp]
         public void Setup()
@@ -34,7 +36,7 @@ namespace ImageAlbumAPITests.ReposTests
         public void Photos_ShouldReturnAllPhotos()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: "ImageAlbumDb")
+                .UseInMemoryDatabase(databaseName: random.Next().ToString())
                 .Options;  
             using (var context = new AppDbContext(options))
             {
@@ -79,7 +81,7 @@ namespace ImageAlbumAPITests.ReposTests
         public void DeletePhoto_IfPhotoExistsShouldDeletePhoto()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: "ImageAlbumDb")
+                .UseInMemoryDatabase(databaseName: "InMemoryDb")
                 .Options;  
             using (var context = new AppDbContext(options))
             {
@@ -101,7 +103,7 @@ namespace ImageAlbumAPITests.ReposTests
         public void UpdatePhoto_IfPhotoExistsShouldUpdatePhoto()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: "ImageAlbumDb")
+                .UseInMemoryDatabase(databaseName: random.Next().ToString())
                 .Options;  
             using (var context = new AppDbContext(options))
             {
@@ -123,7 +125,7 @@ namespace ImageAlbumAPITests.ReposTests
         public void UpdateComments_IfPhotoExistsShouldUpdateComments()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: "ImageAlbumDb")
+                .UseInMemoryDatabase(databaseName: random.Next().ToString())
                 .Options;  
             using (var context = new AppDbContext(options))
             {

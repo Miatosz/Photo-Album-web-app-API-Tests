@@ -59,15 +59,6 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "Microsoft.AspNet.Cors/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net45/System.Web.Cors.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Web.Cors.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.2": {
         "type": "package",
         "dependencies": {
@@ -858,32 +849,6 @@
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
         }
       },
-      "Microsoft.Owin/4.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Owin": "1.0.0"
-        },
-        "compile": {
-          "lib/net45/Microsoft.Owin.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Owin.dll": {}
-        }
-      },
-      "Microsoft.Owin.Cors/4.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.Cors": "5.0.0",
-          "Microsoft.Owin": "4.1.1",
-          "Owin": "1.0.0"
-        },
-        "compile": {
-          "lib/net45/Microsoft.Owin.Cors.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Owin.Cors.dll": {}
-        }
-      },
       "Microsoft.TestPlatform.ObjectModel/16.5.0": {
         "type": "package",
         "dependencies": {
@@ -1277,15 +1242,6 @@
         },
         "build": {
           "build/netcoreapp2.1/NUnit3TestAdapter.props": {}
-        }
-      },
-      "Owin/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Owin.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Owin.dll": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -2776,18 +2732,6 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNet.Cors/5.0.0": {
-      "sha512": "jNwFhEnm0jRlaRCgHEk52hJQltVoM2Bllysv2NtPYrgsVWyS3r5BOtCXkM/lEZ5AdUUBOvha+4QAVcVp1MZp5g==",
-      "type": "package",
-      "path": "microsoft.aspnet.cors/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/System.Web.Cors.dll",
-        "microsoft.aspnet.cors.5.0.0.nupkg.sha512",
-        "microsoft.aspnet.cors.nuspec"
-      ]
-    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.2": {
       "sha512": "Eb7daSO4H2SO4/StrJ6ka9Zx+v2Ht51D0ha229fA05ZyUjiuMkykQFPaQWg2Rkke246PGEkNgM/sCJ9eHxh0+A==",
       "type": "package",
@@ -4061,32 +4005,6 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Microsoft.Owin/4.1.1": {
-      "sha512": "KtjkRz4COQRqrwOBMf+XKW1ZsdiFMqipbmM0khhNJIx6U9VRprbwRGdSq1++PHlZrIwHMmwRHC0nILNSHGkcaA==",
-      "type": "package",
-      "path": "microsoft.owin/4.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.Owin.XML",
-        "lib/net45/Microsoft.Owin.dll",
-        "microsoft.owin.4.1.1.nupkg.sha512",
-        "microsoft.owin.nuspec"
-      ]
-    },
-    "Microsoft.Owin.Cors/4.1.1": {
-      "sha512": "2ht49uWT7zytE0Xy53dfgkUtWyhVPiMyiqenaS5HZ8TmnMSXEP12HG+L0EL44DGqYR9pZtxURUhq5/Za3PaZpg==",
-      "type": "package",
-      "path": "microsoft.owin.cors/4.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.Owin.Cors.XML",
-        "lib/net45/Microsoft.Owin.Cors.dll",
-        "microsoft.owin.cors.4.1.1.nupkg.sha512",
-        "microsoft.owin.cors.nuspec"
-      ]
-    },
     "Microsoft.TestPlatform.ObjectModel/16.5.0": {
       "sha512": "NnLFxmFBCAS6kye2JFszD5WKgj4Zve5KX/R0mhYwh6BVnSeybI2unRnjEPtLyY3CAVhwrY4bh/8LNFtslAcGZg==",
       "type": "package",
@@ -4699,18 +4617,6 @@
         "build/netcoreapp2.1/nunit.engine.dll",
         "nunit3testadapter.3.16.1.nupkg.sha512",
         "nunit3testadapter.nuspec"
-      ]
-    },
-    "Owin/1.0.0": {
-      "sha512": "OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
-      "type": "package",
-      "path": "owin/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/Owin.dll",
-        "owin.1.0.0.nupkg.sha512",
-        "owin.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -8818,7 +8724,6 @@
       "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.1.0-preview1-final",
       "Microsoft.IdentityModel.Tokens >= 6.8.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
-      "Microsoft.Owin.Cors >= 4.1.1",
       "Mock >= 1.0.0",
       "Moq >= 4.16.0",
       "NUnit >= 3.12.0",
@@ -8890,10 +8795,6 @@
             "target": "Package",
             "version": "[16.5.0, )"
           },
-          "Microsoft.Owin.Cors": {
-            "target": "Package",
-            "version": "[4.1.1, )"
-          },
           "Mock": {
             "target": "Package",
             "version": "[1.0.0, )"
@@ -8929,47 +8830,5 @@
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNet.Cors 5.0.0” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8” zamiast platformy docelowej projektu „net5.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
-      "libraryId": "Microsoft.AspNet.Cors",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.Owin 4.1.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8” zamiast platformy docelowej projektu „net5.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
-      "libraryId": "Microsoft.Owin",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.Owin.Cors 4.1.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8” zamiast platformy docelowej projektu „net5.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
-      "libraryId": "Microsoft.Owin.Cors",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Owin 1.0.0” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8” zamiast platformy docelowej projektu „net5.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
-      "libraryId": "Owin",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

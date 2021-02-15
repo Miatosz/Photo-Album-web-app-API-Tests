@@ -22,8 +22,8 @@ namespace ImageAlbumAPITests.ControllersTests
 {
     public class PhotoControllerTests
     {
-        PhotoController _controller;
-        Mock<IPhotoService> _photoService;
+        // PhotoController _controller;
+        // Mock<IPhotoService> _photoService;
         Mock<FakeUserManager> _userManager;
         IMapper _mapper;
         List<Photo> Photos;

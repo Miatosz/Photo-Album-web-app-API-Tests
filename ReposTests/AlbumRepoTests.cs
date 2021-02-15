@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using ImageAlbumAPI.Data;
@@ -12,6 +13,7 @@ namespace ImageAlbumAPITests.ReposTests
     {
         List<Album> _albums;
         AlbumRepo _albumRepo;
+        Random random = new Random();
 
         [SetUp]
         public void Setup()
@@ -33,7 +35,7 @@ namespace ImageAlbumAPITests.ReposTests
         public void Albums_ShouldReturnAllAlbums()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: "ImageAlbumDb")
+                .UseInMemoryDatabase(databaseName: random.Next().ToString())
                 .Options;  
             using (var context = new AppDbContext(options))
             {
@@ -55,7 +57,7 @@ namespace ImageAlbumAPITests.ReposTests
         public void AddAlbum_IfAlbumIdIsNotZeroShouldAddAlbum()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: "ImageAlbumDb")
+                .UseInMemoryDatabase(databaseName: random.Next().ToString())
                 .Options;  
             using (var context = new AppDbContext(options))
             {
@@ -78,7 +80,7 @@ namespace ImageAlbumAPITests.ReposTests
         public void DeleteAlbum_IfAlbumExistsShouldDeleteAlbum()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: "ImageAlbumDb")
+                .UseInMemoryDatabase(databaseName: random.Next().ToString())
                 .Options;  
             using (var context = new AppDbContext(options))
             {
@@ -100,7 +102,7 @@ namespace ImageAlbumAPITests.ReposTests
         public void UpdateAlbum_IfAlbumExistsShouldUpdateAlbum()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: "ImageAlbumDb")
+                .UseInMemoryDatabase(databaseName: random.Next().ToString())
                 .Options;  
             using (var context = new AppDbContext(options))
             {
@@ -117,5 +119,7 @@ namespace ImageAlbumAPITests.ReposTests
                 Assert.AreEqual("changed", context.Albums.First(c => c.Id == 1).Description);
             }
         }
+
+        
     }
 }

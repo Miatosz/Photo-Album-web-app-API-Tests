@@ -166,7 +166,6 @@
 /home/marcin/Pulpit/Github/API/ImageAlbumAPITests/obj/Debug/net5.0/ref/ImageAlbumAPITests.dll
 /home/marcin/Pulpit/Github/API/ImageAlbumAPITests/obj/Debug/net5.0/ImageAlbumAPITests.pdb
 /home/marcin/Pulpit/Github/API/ImageAlbumAPITests/obj/Debug/net5.0/ImageAlbumAPITests.genruntimeconfig.cache
-/home/marcin/Pulpit/Github/API/ImageAlbumAPITests/bin/Debug/net5.0/System.Web.Cors.dll
 /home/marcin/Pulpit/Github/API/ImageAlbumAPITests/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /home/marcin/Pulpit/Github/API/ImageAlbumAPITests/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 /home/marcin/Pulpit/Github/API/ImageAlbumAPITests/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -174,6 +173,3 @@
 /home/marcin/Pulpit/Github/API/ImageAlbumAPITests/bin/Debug/net5.0/dotnet-ef.dll
 /home/marcin/Pulpit/Github/API/ImageAlbumAPITests/bin/Debug/net5.0/Microsoft.Extensions.Identity.Core.dll
 /home/marcin/Pulpit/Github/API/ImageAlbumAPITests/bin/Debug/net5.0/Microsoft.Extensions.Identity.Stores.dll
-/home/marcin/Pulpit/Github/API/ImageAlbumAPITests/bin/Debug/net5.0/Microsoft.Owin.dll
-/home/marcin/Pulpit/Github/API/ImageAlbumAPITests/bin/Debug/net5.0/Microsoft.Owin.Cors.dll
-/home/marcin/Pulpit/Github/API/ImageAlbumAPITests/bin/Debug/net5.0/Owin.dll
